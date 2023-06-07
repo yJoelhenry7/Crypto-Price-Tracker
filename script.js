@@ -39,10 +39,42 @@ function myFunction() {
   }
 
 //   Circular timer
-var timer= document.getElementById('timer');
-var time=59;
+var timer = document.getElementById('timer');
+var time = 59;
 setInterval(function(){
-  timer.innerHTML=time;
+  timer.innerHTML = time;
   time--;
-  if(time<=0) time =60;
-},1000)
+  if (time < 0) {
+    time = 59;
+  }
+}, 1000);
+
+// -------------------
+function startTimer(duration) {
+  let timer = duration;
+  const countdown = document.querySelector('.countdown');
+
+  const countdownInterval = setInterval(() => {
+    countdown.textContent = timer;
+
+    // Update progress bar
+    const circle = document.querySelector('.progress-ring-circle');
+    const circumference = parseFloat(circle.getAttribute('r')) * 2 * Math.PI;
+    const offset = circumference - (timer / duration) * circumference;
+    circle.style.strokeDashoffset = offset;
+
+    if (timer <= 0) {
+      // Reset timer to 60
+      timer = duration;
+    }
+
+    timer--;
+  }, 1000);
+}
+
+// Start the timer with an initial duration of 60 seconds
+startTimer(60);
+
+
+
+

@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hodlinfo | </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utils.css">
+    <title>Hodllnfo | </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <script src="https://kit.fontawesome.com/625b024633.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div style="display: flex; justify-content: space-between;">
             <div>
-                <img src="./HODLINFO_logo.png" alt="HODLINFO LOGO" class="logo">
+                <img src="/images/HODLINFO_logo.png" alt="HODLINFO LOGO" class="logo">
             </div>
             <div style="display: flex; justify-content: space-between;">
                 <div class="dropdown">
@@ -36,24 +38,17 @@
                     </div>
                 </div>
                 <div>
-                    <button class="dropbtn">Buy BTC</button>
+                    <button class="dropbtn" onclick=" window.open('https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn', '_blank')">BUY BTC</button>
                 </div>
             </div>
             <div class="flex">
-                <div class="circleProgress_wrapper">
-                    <div class="wrapper right">
-                        <div class="circleProgress rightcircle right_cartoon"></div>
-                    </div>
-                    <div class="wrapper left">
-                        <div class="circleProgress leftcircle left_cartoon"></div>
-                    </div>
-                    <span id="timer">60</span>
-                </div>
+                <svg class="progress-ring" width="60" height="60" viewBox="0 0 60 60">
+                    <circle class="progress-ring-circle" cx="30" cy="30" r="20"></circle>
+                    <text class="countdown" x="30" y="32" text-anchor="middle" dominant-baseline="middle">60</text>
+                  </svg>
+                    <button class="telegram"><i class='fab fa-telegram-plane'></i> Connect Telegram</button>
                 <div>
-                    <button class="telegram"> Connect Telegram</button>
-                </div>
-                <div>
-                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <input type="checkbox" class="checkbox" id="checkbox" checked>
                     <label for="checkbox" class="checkbox-label">
                         <span class="ball"></span>
                     </label>
@@ -61,11 +56,109 @@
             </div>
         </div>
     </header>
+
+<div class="values">
+    <div>
+        <div class="upper">0.92 %</div>
+        <div class="lower">5 Mins</div>
+    </div>
+    <div>
+        <div class="upper">1.71 %</div>
+        <div class="lower">1 Hour</div>
+    </div>
+    <div style="text-align: center;">
+        <div class="lower">Best Price to Trade</div>
+        <div style="font-size: 70px;">₹ 25,07,361</div>
+        <div class="lower">Average BTC/INR net price including commission</div>
+    </div>
+    <div>
+        <div class="upper">10.41 %</div>
+        <div class="lower">1 Day</div>
+    </div>
+    <div>
+        <div class="upper">13.63 %</div>
+        <div class="lower">7 Days</div>
+    </div>
+</div>
+
+
+<div class="custom-table-responsive">
+    <table class="table custom-table">
+      <thead>
+        <tr>  
+          
+          <th scope="col">Order</th>
+          <th scope="col">Name</th>
+          <th scope="col">Occupation</th>
+          <th scope="col">Contact</th>
+          <th scope="col">Education</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr scope="row">
+          <td>
+            1392
+          </td>
+          <td>James Yates</td>
+          <td>
+            Web Designer
+            <small class="d-block">Far far away, behind the word mountains</small>
+          </td>
+          <td>+63 983 0962 971</td>
+          <td>NY University</td>
+        </tr>
+        <tr class="spacer"><td colspan="100"></td></tr>
+        <tr>
+          
+          <td>4616</td>
+          <td>Matthew Wasil</td>
+          <td>
+            Graphic Designer
+            <small class="d-block">Far far away, behind the word mountains</small>
+          </td>
+          <td>+02 020 3994 929</td>
+          <td>London College</td>
+        </tr>
+        <tr class="spacer"><td colspan="100"></td></tr>
+        <tr>
+          
+          <td>9841</td>
+          <td>Sampson Murphy</td>
+          <td>
+            Mobile Dev
+            <small class="d-block">Far far away, behind the word mountains</small>
+          </td>
+          <td>+01 352 1125 0192</td>
+          <td>Senior High</td>
+        </tr>
+        <tr class="spacer"><td colspan="100"></td></tr>
+        <tr>
+
+          
+          <td>9548</td>
+          <td>Gaspar Semenov</td>
+          <td>
+            Illustrator
+            <small class="d-block">Far far away, behind the word mountains</small>
+          </td>
+          <td>+92 020 3994 929</td>
+          <td>College</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  
+  
+
+
+
     <hr>
     <footer>
         <div class="footer">
             <div>
-                <h6>Copyright &#169; 2019 &nbsp&nbsp Hodlinfo.com</h4>
+                <h6>Copyright &#169; 2019 &nbsp&nbsp HodlInfo.com</h4>
             </div>
             <div>
                 <h6>Support</h4>
@@ -73,6 +166,10 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
