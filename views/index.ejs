@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hodllnfo | </title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <script src="https://kit.fontawesome.com/625b024633.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div style="display: flex; justify-content: space-between;">
+      <div style="margin-top: 18px;margin-left:30px;">
+        <img src="/images/HODLINFO_logo.png" alt="HODLINFO LOGO" class="logo">
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn"><b>INR</b> <i class="arrow down"></i></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#"> <b>INR</b> </a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="myFunction2()" class="dropbtn"><b>BTC</b> <i class="arrow down"></i></button>
+          <div id="myDropdown2" class="dropdown-content">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+          </div>
+        </div>
+        <div>
+          <button class="dropbtn"
+            onclick=" window.open('https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn', '_blank')"><b>BUY
+              BTC</b></button>
+        </div>
+      </div>
+      <div class="flex">
+        <div>
+          <svg class="progress-ring" width="60" height="60" viewBox="0 0 60 60">
+            <circle class="progress-ring-circle" cx="30" cy="30" r="20"></circle>
+            <text class="countdown" x="30" y="32" text-anchor="middle" dominant-baseline="middle">60</text>
+          </svg>
+        </div>
+        <div>
+          <button class="telegram"><i class='fab fa-telegram-plane'></i> <b>Connect Telegram</b></button>
+        </div>
+        <div>
+          <input type="checkbox" class="checkbox" id="checkbox" checked>
+          <label for="checkbox" class="checkbox-label">
+            <span class="ball"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="values">
+    <div>
+      <div class="upper">0.92 %</div>
+      <div class="lower">5 Mins</div>
+    </div>
+    <div>
+      <div class="upper">1.71 %</div>
+      <div class="lower">1 Hour</div>
+    </div>
+    <div style="text-align: center;">
+      <div class="lower">Best Price to Trade</div>
+      <div style="font-size: 70px;">₹ 25,07,361</div>
+      <div class="lower">Average BTC/INR net price including commission</div>
+    </div>
+    <div>
+      <div class="upper">10.41 %</div>
+      <div class="lower">1 Day</div>
+    </div>
+    <div>
+      <div class="upper">13.63 %</div>
+      <div class="lower">7 Days</div>
+    </div>
+  </div>
+
+
+  <div class="custom-table-responsive">
+    <table class="table custom-table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Platform</th>
+          <th scope="col">Last Traded Price</th>
+          <th scope="col">Buy / Sell Price</th>
+          <th scope="col">Volume</th>
+          <th scope="col">Base Unit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr scope="row">
+          <td>1</td>
+          <td>
+            <%= nameArray[0]%>
+          </td>
+          <td>
+            &#8377;<%=lastArray[0]%>
+          </td>
+          <td>
+            &#8377; <%= buyArray[0]%> /  &#8377; <%= sellArray[0]%>
+            </td>
+          <td><%= volumeArray[0] %></td>
+          <td><%= baseUnitArray[0] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <%= nameArray[1]%>
+          </td>
+          <td>
+            &#8377; <%=lastArray[1]%>
+          </td>
+          <td>
+            &#8377; <%= buyArray[1]%> /  &#8377; <%= sellArray[1]%>
+          </td>
+          <td><%= volumeArray[1] %></td>
+          <td><%= baseUnitArray[1] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <%= nameArray[2]%>
+          </td>
+          <td> &#8377; <%=lastArray[2]%></td>
+          <td>
+            &#8377; <%= buyArray[2]%> /  &#8377; <%= sellArray[2]%>
+
+          </td>
+          <td><%= volumeArray[2] %></td>
+          <td><%= baseUnitArray[2] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            <%= nameArray[3]%>
+          </td>
+          <td> &#8377; <%=lastArray[3]%></td>
+          <td>
+            &#8377; <%= buyArray[3]%> /  &#8377; <%= sellArray[3]%>
+          </td>
+          <td><%= volumeArray[3] %></td>
+          <td><%= baseUnitArray[3] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            <%= nameArray[4]%>
+          </td>
+          <td> &#8377;<%=lastArray[4] %></td>
+          <td>
+            &#8377; <%= buyArray[4]%> /  &#8377; <%= sellArray[4]%>
+          </td>
+          <td><%= volumeArray[4] %></td>
+          <td><%= baseUnitArray[4] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            <%= nameArray[5]%>
+          </td>
+          <td> &#8377;<%=lastArray[5] %></td>
+          <td>
+            &#8377; <%= buyArray[5]%> /  &#8377; <%= sellArray[5]%>
+          </td>
+          <td><%= volumeArray[5] %></td>
+          <td><%= baseUnitArray[5] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>
+            <%= nameArray[6]%>
+          </td>
+          <td> &#8377;<%=lastArray[6] %></td>
+          <td>
+            &#8377; <%= buyArray[6]%> /  &#8377; <%= sellArray[6]%>
+          </td>
+          <td><%= volumeArray[6] %></td>
+          <td><%= baseUnitArray[6] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>
+            <%= nameArray[7]%>
+          </td>
+          <td> &#8377;<%=lastArray[7] %></td>
+          <td>
+            &#8377; <%= buyArray[7]%> /  &#8377; <%= sellArray[7]%>
+          </td>
+          <td><%= volumeArray[7] %></td>
+          <td><%= baseUnitArray[7] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>
+            <%= nameArray[8]%>
+          </td>
+          <td> &#8377;<%=lastArray[8] %></td>
+          <td>
+            &#8377; <%= buyArray[8]%> /  &#8377; <%= sellArray[8]%>
+          </td>
+          <td><%= volumeArray[8] %></td>
+          <td><%= baseUnitArray[8] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>
+            <%= nameArray[9]%>
+          </td>
+          <td> &#8377;<%=lastArray[9] %></td>
+          <td>
+            &#8377; <%= buyArray[9]%> /  &#8377; <%= sellArray[9]%>
+          </td>
+          <td><%= volumeArray[9] %></td>
+          <td><%= baseUnitArray[9] %></td>
+        </tr>
+        <tr class="spacer">
+          <td colspan="100"></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+  <hr>
+  <footer>
+    <div class="footer">
+      <div>
+        <h6>Copyright &#169; 2019 &nbsp&nbsp HodlInfo.com</h4>
+      </div>
+      <div>
+        <h6>Support</h4>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

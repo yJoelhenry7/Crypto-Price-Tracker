@@ -1,9 +1,10 @@
+// ---------------------------------------------------Dark mode toggle Button---------------------------------------------
 const checkbox = document.getElementById("checkbox")
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
 
-// Drag down Menu Buttons
+//---------------------------------------------------- Drag down Menu Buttons-------------------------------
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -38,18 +39,7 @@ function myFunction() {
     }
   }
 
-//   Circular timer
-var timer = document.getElementById('timer');
-var time = 59;
-setInterval(function(){
-  timer.innerHTML = time;
-  time--;
-  if (time < 0) {
-    time = 59;
-  }
-}, 1000);
-
-// -------------------
+// -------------------------------------------------------------------Timer code------------------------------------
 function startTimer(duration) {
   let timer = duration;
   const countdown = document.querySelector('.countdown');
